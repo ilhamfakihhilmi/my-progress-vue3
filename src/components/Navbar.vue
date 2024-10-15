@@ -4,7 +4,7 @@
       'p-4 fixed top-0 w-full z-10 h-[57px] flex items-center',
       isDarkMode
         ? 'bg-gray-800 text-white'
-        : 'bg-white text-slate-900 shadow-b',
+        : 'bg-[#F4F6F8] text-slate-900 shadow-sm',
     ]"
   >
     <div :class="['logo', isDarkMode ? 'text-white' : 'text-gray-900']">

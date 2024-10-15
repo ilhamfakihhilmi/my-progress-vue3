@@ -1,11 +1,11 @@
 <template>
   <div
-    :class="[isSidebarVisible ? 'w-64' : 'w-16', 'shadow-lg']"
+    :class="[isSidebarVisible ? 'w-64' : 'w-16', 'shadow-sm']"
     class="text-gray-800 dark:text-white dark:bg-gray-800 bg-[#F4F6F8] flex flex-col transition-all duration-500 ease-in-out"
   >
     <!-- Sidebar Header -->
     <div
-      class="p-5 dark:bg-gray-800 bg-white text-lg font-semibold flex items-center h-14 gap-5"
+      class="p-5 dark:bg-gray-800 bg-[#F4F6F8] text-lg font-semibold flex items-center h-14 gap-5"
     >
       <button @click="toggleSidebar" class="text-slate-800 dark:text-white">
         <svg
@@ -60,11 +60,11 @@
           >
             <li class="mb-2 relative">
               <router-link
-                to="/"
+                to="/submenu-1-1"
                 class="flex items-center space-x-2 p-2 rounded-lg transition-colors duration-300"
                 :class="{
                   'bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600':
-                    $route.path === '/',
+                    $route.path === '/submenu-1-1',
                   'hover:bg-white dark:hover:bg-gray-600':
                     $route.path !== '/submenu-1-1',
                 }"
@@ -248,7 +248,7 @@ onMounted(() => {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #6366f1; /* Tailwind's indigo-600 */
+  background-color: rgb(184, 184, 184); /* Tailwind's indigo-600 */
 }
 
 .submenu {
